@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+android:background="@drawable/paspo"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AddFragment">
+
+<ImageView
+    android:id="@+id/add_image"
+    android:layout_margin="10dp"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:src="@drawable/pasport4"
+    />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ismingizni kiriting"
+        android:id="@+id/edt_name"
+        android:textColorHint="@color/black"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Familiyangizni kiriting"
+        android:id="@+id/edt_last_name"
+        android:textColorHint="@color/black"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Otangizni ismini kiriting"
+        android:id="@+id/edt_father_name"
+        android:textColorHint="@color/black"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/btn_save"
+        android:backgroundTint="@color/teal_200"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_rv"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        />
+</LinearLayout>
